@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1E4D2B">
+  <title>Trinetra Exports | Premium Indian Agriculture & Global Industrial Trading</title>
+  <meta name="description" content="Trinetra Exports brings premium organic Indian jaggery, spices, pulses, and high-performance excavators to the global market. Delivering excellence since 1937.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo-link">
+        <img src="logo.png" alt="Trinetra Exports Logo" class="logo-img">
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#divisions">Portfolios</a></li>
+        <li><a href="#why-choose-us">Why Choose Us</a></li>
+        <li><a href="#inquiry">Inquiry</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language Picker -->
+        <div class="lang-picker">
+          <button class="lang-toggle" id="langToggle" aria-haspopup="true" aria-expanded="false">
+            <svg class="globe-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>EN</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-item active" data-lang="en">English</button>
+            <button class="lang-item" data-lang="hi">हिन्दी (Hindi)</button>
+            <button class="lang-item" data-lang="es">Español (Spanish)</button>
+            <button class="lang-item" data-lang="de">Deutsch (German)</button>
+          </div>
+        </div>
+
+        <a href="#inquiry" class="btn-primary header-cta">Request Quote</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#divisions">Portfolios</a></li>
+      <li><a href="#why-choose-us">Why Choose Us</a></li>
+      <li><a href="#inquiry">Inquiry</a></li>
+    </ul>
+    <div class="mobile-lang-section">
+      <p>Select Language</p>
+      <div class="mobile-lang-grid">
+        <button class="mob-lang-btn active" data-lang="en">EN</button>
+        <button class="mob-lang-btn" data-lang="hi">HI</button>
+        <button class="mob-lang-btn" data-lang="es">ES</button>
+        <button class="mob-lang-btn" data-lang="de">DE</button>
+      </div>
+    </div>
+    <a href="#inquiry" class="btn-primary mobile-menu-cta">Request Quote</a>
+  </div>
+
+  <!-- ── HERO SECTION ── -->
+  <header class="hero" id="home">
+    <canvas id="hero-globe-canvas"></canvas>
+    <canvas id="hero-particles-canvas"></canvas>
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge" data-reveal>
+          <span class="pulse-dot"></span>
+          <span>ESTABLISHED SINCE 1937</span>
+        </div>
+        <h1 class="hero-title" data-reveal data-delay="100">
+          Bridging Indian <em>Heritage</em> with Global Markets.
+        </h1>
+        <p class="hero-desc" data-reveal data-delay="200">
+          At TRINETRA EXPORTS, we bring the authentic sweetness of premium Indian jaggery, rich spices, and essential commodities, alongside robust industrial excavators, to clients worldwide. Sourced with care, exported with integrity.
+        </p>
+        <div class="hero-cta" data-reveal data-delay="300">
+          <a href="#divisions" class="btn-primary">Explore Portfolio</a>
+          <a href="#story" class="btn-outline">Our Legacy</a>
+        </div>
+        
+        <div class="hero-stats" data-reveal data-delay="400">
+          <div class="stat-item">
+            <div class="stat-num">1937</div>
+            <div class="stat-label">Heritage Roots</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Organic Jaggery</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Global Destinations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── OUR STORY SECTION ── -->
+  <section class="about-intro" id="story">
+    <div class="container">
+      <div class="about-intro-inner">
+        <div class="about-intro-text" data-reveal="left">
+          <span class="section-label">Since 1937</span>
+          <h2 class="section-title">Best Quality, Service & Pure Organic Jaggery</h2>
+          <p>
+            At TRINETRA EXPORTS, we bring the authentic sweetness of premium Indian jaggery to customers across the world. Sourced from carefully selected farms and processed with attention to quality, our jaggery preserves its natural taste, rich color, and traditional purity. We are committed to delivering products that meet international standards while maintaining the original essence of Indian agriculture.
+          </p>
+          <p>
+            We offer a carefully selected range of export-quality products including natural jaggery, Indian spices, and grocery essentials. Our jaggery is sourced to preserve its rich taste and traditional purity, while our spices are selected for aroma, freshness, and authentic flavor. Along with this, we supply quality grocery products that meet international market requirements.
+          </p>
+          <a href="#divisions">Explore our export divisions &rarr;</a>
+        </div>
+        
+        <div class="about-bowl-wrap" data-reveal="right" data-delay="200">
+          <div class="about-bowl-img">
+            <img src="shop_photo.jpg" alt="Trinetra Exports Heritage Shop - Established 1937">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DIVISIONS PORTFOLIO SECTION ── -->
+  <section class="products-showcase" id="divisions">
+    <!-- Scrolling Marquee Ticker -->
+    <div class="ticker-banner">
+      <div class="ticker-content">
+        <span>Reliable Worldwide Logistics Services &nbsp;❄&nbsp; Delivering Indian Quality Worldwide &nbsp;❄&nbsp; Premium Agricultural Export Solutions &nbsp;❄&nbsp; Sourced with Care, Processed with Integrity &nbsp;❄&nbsp; Trusted Global Export Partner &nbsp;❄&nbsp;</span>
+        <span>Reliable Worldwide Logistics Services &nbsp;❄&nbsp; Delivering Indian Quality Worldwide &nbsp;❄&nbsp; Premium Agricultural Export Solutions &nbsp;❄&nbsp; Sourced with Care, Processed with Integrity &nbsp;❄&nbsp; Trusted Global Export Partner &nbsp;❄&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Dark Upper Hero Container with Logistics Background -->
+    <div class="psc-hero-banner">
+      <div class="psc-hero-bg"></div>
+      <div class="container psc-hero-inner">
+        <div class="psc-hero-text" data-reveal="left">
+          <span class="section-label text-gold">Featured Products</span>
+          <h2 class="section-title text-white">Our Premium Export Collection</h2>
+          <p class="section-desc text-mist">
+            Explore our premium range of export-quality products carefully sourced, securely packed, and delivered worldwide with quality, freshness, and reliability.
+          </p>
+          
+          <!-- Division Tabs -->
+          <div class="division-tabs-wrapper">
+            <div class="division-tabs">
+              <button class="tab-btn active" data-tab="agro">Agro-Commodities Division</button>
+              <button class="tab-btn" data-tab="machinery">Heavy Machinery Division</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lower Container with Overlapping Cards -->
+    <div class="psc-cards-container container">
+      <!-- Agro-Commodities Grid -->
+      <div class="products-grid active" id="agro-grid">
+        <!-- Card 1: Jaggery -->
+        <div class="psc-card" data-reveal data-delay="100">
+          <div class="psc-img-wrap">
+            <img src="jaggery_export.png" alt="Traditional block and powdered organic jaggery" loading="lazy" decoding="async">
+          </div>
+          <div class="psc-badge-strip">Featured Product</div>
+          <div class="psc-body">
+            <span class="psc-local">Indian Gur / Shakkar</span>
+            <h3 class="psc-name">Premium Indian Jaggery</h3>
+            <p class="psc-desc">
+              Sourced from heritage cane farms, preserving natural vitamins, iron content, rich deep golden color, and traditional purity. Completely free of chemicals or synthetic bleaching agents.
+            </p>
+            <div class="psc-benefits">
+              <span>Rich Aroma</span>
+              <span>Chemical-Free</span>
+              <span>Strict Quality Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Spices -->
+        <div class="psc-card" data-reveal data-delay="200">
+          <div class="psc-img-wrap">
+            <img src="spices_export.png" alt="Assorted authentic Indian spices in rustic bowls" loading="lazy" decoding="async">
+          </div>
+          <div class="psc-badge-strip">Featured Product</div>
+          <div class="psc-body">
+            <span class="psc-local">Masala & Herbage</span>
+            <h3 class="psc-name">Authentic Spices</h3>
+            <p class="psc-desc">
+              Selected specifically for rich essential oil content, fresh aroma, and bold flavor. We export cardamom, turmeric, red chili, black & green pepper, cumin, and customized spice blends.
+            </p>
+            <div class="psc-benefits">
+              <span>High Aroma</span>
+              <span>Perfect Moisture</span>
+              <span>Eco-friendly Packing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Pulses & Grocery -->
+        <div class="psc-card" data-reveal data-delay="300">
+          <div class="psc-img-wrap">
+            <img src="pulses_export.png" alt="Vibrant dry pulses, lentils, and grains" loading="lazy" decoding="async">
+          </div>
+          <div class="psc-badge-strip">Featured Product</div>
+          <div class="psc-body">
+            <span class="psc-local">Grocery Staples</span>
+            <h3 class="psc-name">Essential Pulses & Grains</h3>
+            <p class="psc-desc">
+              Premium grade chickpeas, lentils, rice, and grocery staples processed to meet global food standards. Sortex cleaned and securely sealed for longer shelf-life.
+            </p>
+            <div class="psc-benefits">
+              <span>Sortex Cleaned</span>
+              <span>Nutrient-Dense</span>
+              <span>Custom Quantities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heavy Machinery Grid -->
+      <div class="products-grid" id="machinery-grid">
+        <!-- Card 4: Excavator -->
+        <div class="psc-card machinery-card" data-reveal data-delay="100">
+          <div class="psc-img-wrap machinery-img">
+            <img src="excavator_export.png" alt="Heavy excavator machine working on infrastructure site" loading="lazy" decoding="async">
+          </div>
+          <div class="psc-badge-strip machinery-badge-strip">Featured Product</div>
+          <div class="psc-body">
+            <span class="psc-local">Heavy Equipment</span>
+            <h3 class="psc-name">Crawler Excavators</h3>
+            <p class="psc-desc">
+              High-performance, fuel-efficient crawler excavators and heavy industrial machinery for international construction, mining, and agricultural drainage projects. Fully certified logistics.
+            </p>
+            <div class="psc-benefits machinery-benefits">
+              <span>Heavy Duty</span>
+              <span>Global Emissions Compliance</span>
+              <span>Spares Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OUR PROCESS (WHY CHOOSE US) ── -->
+  <section class="why-choose-us" id="why-choose-us">
+    <div class="container">
+      <div class="wcu-header" data-reveal>
+        <span class="section-label">Our Process</span>
+        <h2 class="section-title">From Farm to Export in Four Simple Steps</h2>
+        <p class="section-desc mx-auto">
+          We combine direct farmer partnerships, rigorous quality control checks, and export-ready logistics so your supply chain remains seamless and highly dependable.
+        </p>
+      </div>
+
+      <div class="process-flow-container">
+        <!-- Desktop Dotted Connectors -->
+        <div class="connector horizontal-1">
+          <svg viewBox="0 0 100 20" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4">
+            <line x1="0" y1="10" x2="90" y2="10" />
+            <polygon points="90,5 100,10 90,15" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="connector vertical">
+          <svg viewBox="0 0 20 100" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4">
+            <line x1="10" y1="0" x2="10" y2="90" />
+            <polygon points="5,90 10,100 15,90" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="connector horizontal-2">
+          <svg viewBox="0 0 100 20" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4">
+            <line x1="100" y1="10" x2="10" y2="10" />
+            <polygon points="10,5 0,10 10,15" fill="currentColor" />
+          </svg>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1: Farmer Partnerships -->
+          <div class="process-card" data-reveal data-delay="100">
+            <div class="process-card-left">
+              <span class="process-num">01</span>
+              <h3>Farmer Partnerships</h3>
+              <p>We work directly with certified growers and sugarcane farms to source premium raw commodities and organic jaggery at the source, ensuring fair trade practices.</p>
+            </div>
+            <div class="process-card-right">
+              <!-- Handshake / Plant SVG -->
+              <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="8.5" cy="7" r="4" />
+                <path d="M18 8a3 3 0 0 0-3-3 3 3 0 0 0-3 3v12" />
+                <path d="M22 12a3 3 0 0 0-3-3 3 3 0 0 0-3 3v8" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 2: Quality Inspection -->
+          <div class="process-card" data-reveal data-delay="200">
+            <div class="process-card-left">
+              <span class="process-num">02</span>
+              <h3>Quality Inspection</h3>
+              <p>Each cargo shipment undergoes multi-stage inspections and lab-testing for moisture, purity, and safety, strictly complying with APEDA and FSSAI food quality criteria.</p>
+            </div>
+            <div class="process-card-right">
+              <!-- Inspection / Checklist SVG -->
+              <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 3: Custom Packaging -->
+          <div class="process-card" data-reveal data-delay="300">
+            <div class="process-card-left">
+              <span class="process-num">03</span>
+              <h3>Custom Packaging</h3>
+              <p>From bulk export bags to tailored retail packages, we pack and seal every batch using food-grade materials to preserve natural flavor and freshness during sea transit.</p>
+            </div>
+            <div class="process-card-right">
+              <!-- Package Box SVG -->
+              <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="21 8 21 21 3 21 3 8" />
+                <rect x="1" y="3" width="22" height="5" />
+                <line x1="10" y1="12" x2="14" y2="12" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Step 4: Export Logistics -->
+          <div class="process-card" data-reveal data-delay="400">
+            <div class="process-card-left">
+              <span class="process-num">04</span>
+              <h3>Export Logistics</h3>
+              <p>Our trade desk handles custom clearances, global marine freight lines, phytosanitary certifications, and tracking, ensuring your consignments arrive on time.</p>
+            </div>
+            <div class="process-card-right">
+              <!-- Logistics Ship / Truck SVG -->
+              <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GLOBAL LOGISTICS & FREIGHT SERVICES ── -->
+  <section class="logistics-services" id="logistics">
+    <div class="container">
+      <div class="logistics-banner" data-reveal>
+        <div class="logistics-banner-content">
+          <span class="section-label-gold">Trusted Agricultural Exports Worldwide</span>
+          <h2 class="logistics-banner-title">Let's Connect Global Markets Together</h2>
+          <a href="#inquiry" class="btn-terracotta">Send Your Inquiry Today</a>
+        </div>
+      </div>
+      
+      <div class="logistics-cards-grid">
+        <!-- Card 1: Road Freight -->
+        <div class="logistics-card card-road" data-reveal data-delay="100">
+          <div class="card-icon-wrapper">
+            <svg class="freight-icon truck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+          <div class="card-text">
+            <h3>Road Freight</h3>
+            <p>Safe and reliable ground transportation.</p>
+          </div>
+          <div class="card-watermark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 2: Ocean Freight -->
+        <div class="logistics-card card-ocean" data-reveal data-delay="200">
+          <div class="card-icon-wrapper">
+            <svg class="freight-icon ship-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 17h20L19 21H5L2 17z" />
+              <path d="M5 17V8h4v9" />
+              <path d="M13 17V5h6v12" />
+              <path d="M9 12h4" />
+            </svg>
+          </div>
+          <div class="card-text">
+            <h3>Ocean Freight</h3>
+            <p>Secure international sea cargo solutions.</p>
+          </div>
+          <div class="card-watermark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+              <path d="M2 17h20L19 21H5L2 17z" />
+              <path d="M5 8h4v9H5V8zM13 5h6v12h-6V5z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 3: Air Freight -->
+        <div class="logistics-card card-air" data-reveal data-delay="300">
+          <div class="card-icon-wrapper">
+            <svg class="freight-icon plane-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-2-2h-3l-5-4H9l3 4H7L5 6H3v4l3 2-3 2v4h2l2-2h5l-3 4h2l5-4h3a2 2 0 0 0 2-2z" />
+            </svg>
+          </div>
+          <div class="card-text">
+            <h3>Air Freight</h3>
+            <p>Fast global shipping for urgent deliveries.</p>
+          </div>
+          <div class="card-watermark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+              <path d="M21 16V8a2 2 0 0 0-2-2h-3l-5-4H9l3 4H7L5 6H3v4l3 2-3 2v4h2l2-2h5l-3 4h2l5-4h3a2 2 0 0 0 2-2z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── READY TO PARTNER CTA ── -->
+  <section class="partner-cta-section">
+    <div class="partner-cta-bg"></div>
+    <div class="container partner-cta-inner" data-reveal>
+      <span class="section-label">Ready to Partner?</span>
+      <h2 class="section-title">Start With a Free Sample</h2>
+      <p class="section-desc mx-auto">
+        Whether you need a sample kit or a full container, our team is ready to assist with competitive pricing, custom packaging, and secure export documentation.
+      </p>
+      <div class="partner-cta-actions">
+        <a href="#inquiry" class="btn-primary gold-btn">Request Free Sample</a>
+        <a href="#divisions" class="btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INQUIRY SECTION ── -->
+  <section class="inquiry-section" id="inquiry">
+    <div class="watermark-spices"></div>
+    <div class="watermark-left"></div>
+    <div class="container">
+      <div class="inquiry-wrapper">
+        <div class="inquiry-info" data-reveal="left">
+          <span class="section-label">Connect Globally</span>
+          <h2 class="section-title">Initiate a Trade Inquiry</h2>
+          <p>
+            Interested in sourcing our organic jaggery, Indian spices, essential pulses, or requesting custom machinery procurement? 
+          </p>
+          <p>
+            Fill out our formal inquiry sheet. A regional trade coordinator will connect with you within 12 business hours.
+          </p>
+          
+          <div class="contact-details">
+            <div class="cd-item">
+              <svg class="cd-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span><strong>Purv Boriya</strong> (Trade Director)</span>
+            </div>
+            <div class="cd-item">
+              <svg class="cd-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>trinetraexports7@gmail.com</span>
+            </div>
+            <div class="cd-item">
+              <svg class="cd-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 91045 44404</span>
+            </div>
+            <div class="cd-item">
+              <svg class="cd-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Kandoi Bazar Chowk, Gheekanta Rd, Rajkot, Gujarat 360001</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="inquiry-form-card" data-reveal="right" data-delay="150">
+          <form id="inquiryForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required placeholder="e.g., John Doe">
+              </div>
+              <div class="form-group">
+                <label for="companyName">Company / Firm Name *</label>
+                <input type="text" id="companyName" required placeholder="e.g., Global Foods Ltd">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" required placeholder="e.g., buyer@company.com">
+              </div>
+              <div class="form-group">
+                <label for="productCategory">Product Division of Interest *</label>
+                <select id="productCategory" required>
+                  <option value="" disabled selected>Select a division...</option>
+                  <option value="jaggery">Premium Jaggery</option>
+                  <option value="spices">Indian Spices</option>
+                  <option value="pulses">Essential Grains/Pulses</option>
+                  <option value="excavators">Crawler Excavators</option>
+                  <option value="all">Multiple Divisions</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Detailed Inquiry / Sourcing Volume Requirement *</label>
+              <textarea id="message" rows="5" required placeholder="Describe your destination port, shipping terms (FOB/CIF), and packaging/volume requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit">Send Sourcing Request</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <!-- The Logistics Animation inside the footer, at the top -->
+    <section class="logistics-scene">
+      <div class="skyline">
+        <svg class="distant-hill" viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,80 C360,40 720,120 1080,60 C1260,30 1380,50 1440,40 L1440,120 L0,120 Z" fill="#EEF6EF"></path>
+        </svg>
+      </div>
+      
+      <div class="street-elements">
+        <div class="street-building warehouse">
+          <svg viewBox="0 0 160 100" width="160" height="100">
+            <rect x="10" y="20" width="140" height="80" fill="#E8E0D0" rx="4" />
+            <polygon points="10,20 80,0 150,20" fill="#B8955A" />
+            <rect x="30" y="45" width="30" height="35" fill="#1E4D2B" rx="2" />
+            <rect x="75" y="45" width="55" height="55" fill="#3D5240" rx="2" />
+            <rect x="35" y="25" width="20" height="12" fill="white" opacity="0.8" rx="1" />
+            <rect x="105" y="25" width="20" height="12" fill="white" opacity="0.8" rx="1" />
+          </svg>
+        </div>
+        <div class="street-building office">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <rect x="10" y="30" width="100" height="90" fill="#D4E4D6" rx="4" />
+            <polygon points="5,30 60,10 115,30" fill="#1E4D2B" />
+            <rect x="45" y="70" width="30" height="50" fill="#B8955A" rx="2" />
+            <circle cx="52" cy="95" r="3" fill="white" />
+            <rect x="25" y="45" width="20" height="20" fill="white" opacity="0.9" rx="2" />
+            <rect x="75" y="45" width="20" height="20" fill="white" opacity="0.9" rx="2" />
+          </svg>
+        </div>
+        <div class="street-light">
+          <svg viewBox="0 0 20 120" width="20" height="120">
+            <line x1="10" y1="120" x2="10" y2="15" stroke="#3D5240" stroke-width="2" />
+            <path d="M10,15 C10,5 20,5 20,10" fill="none" stroke="#3D5240" stroke-width="2" />
+            <circle cx="20" cy="12" r="4" fill="#FAF8F2" style="filter: drop-shadow(0 0 4px #B8955A);" />
+            <rect x="6" y="112" width="8" height="8" fill="#3D5240" rx="1" />
+          </svg>
+        </div>
+        <div class="street-tree tree-1">
+          <svg viewBox="0 0 40 100" width="40" height="100">
+            <line x1="20" y1="100" x2="20" y2="40" stroke="#3D5240" stroke-width="3" />
+            <circle cx="20" cy="35" r="22" fill="#4A8F5F" />
+            <circle cx="15" cy="25" r="15" fill="#2D6A3F" />
+          </svg>
+        </div>
+        <div class="street-tree tree-2">
+          <svg viewBox="0 0 30 80" width="30" height="80">
+            <line x1="15" y1="80" x2="15" y2="35" stroke="#3D5240" stroke-width="2.5" />
+            <ellipse cx="15" cy="30" rx="15" ry="22" fill="#2D6A3F" />
+          </svg>
+        </div>
+        <div class="street-bench">
+          <svg viewBox="0 0 60 30" width="60" height="30">
+            <rect x="5" y="15" width="50" height="4" fill="#B8955A" rx="1" />
+            <line x1="10" y1="15" x2="10" y2="28" stroke="#3D5240" stroke-width="2" />
+            <line x1="50" y1="15" x2="50" y2="28" stroke="#3D5240" stroke-width="2" />
+            <line x1="10" y1="5" x2="10" y2="15" stroke="#3D5240" stroke-width="2" />
+            <line x1="50" y1="5" x2="50" y2="15" stroke="#3D5240" stroke-width="2" />
+            <rect x="5" y="5" width="50" height="3" fill="#B8955A" rx="1" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="roadway">
+        <div class="road-line"></div>
+        <div class="truck truck-red">
+          <svg viewBox="0 0 180 60" width="180" height="60">
+            <path d="M15,42 L15,25 L35,25 C38,25 43,30 45,35 L48,42 Z" fill="#b71c1c" />
+            <rect x="22" y="29" width="12" height="8" fill="white" rx="1" />
+            <rect x="8" y="42" width="42" height="8" fill="#333" rx="1" />
+            <rect x="50" y="10" width="120" height="40" fill="#1E4D2B" rx="2" />
+            <text x="56" y="33" fill="#FAF8F2" font-family="'DM Sans', sans-serif" font-size="7" font-weight="bold" letter-spacing="1">TRINETRA EXPORTS</text>
+            <text x="76" y="43" fill="#B8955A" font-family="'DM Sans', sans-serif" font-size="5" font-weight="bold" letter-spacing="0.5">AGRO LOGISTICS</text>
+            <rect x="42" y="48" width="130" height="4" fill="#555" />
+            <circle cx="30" cy="50" r="8" fill="#333" />
+            <circle cx="30" cy="50" r="3" fill="#bbb" />
+            <circle cx="70" cy="50" r="8" fill="#333" />
+            <circle cx="70" cy="50" r="3" fill="#bbb" />
+            <circle cx="140" cy="50" r="8" fill="#333" />
+            <circle cx="140" cy="50" r="3" fill="#bbb" />
+            <circle cx="156" cy="50" r="8" fill="#333" />
+            <circle cx="156" cy="50" r="3" fill="#bbb" />
+          </svg>
+        </div>
+        <div class="truck truck-yellow">
+          <svg viewBox="0 0 190 60" width="190" height="60">
+            <path d="M15,42 L15,25 L35,25 C38,25 43,30 45,35 L48,42 Z" fill="#333" />
+            <rect x="22" y="29" width="12" height="8" fill="white" rx="1" />
+            <rect x="8" y="42" width="42" height="8" fill="#111" rx="1" />
+            <rect x="50" y="40" width="135" height="10" fill="#B8955A" rx="1" />
+            <g transform="translate(68, 12) scale(0.6)">
+              <rect x="10" y="35" width="90" height="12" fill="#111" rx="4" />
+              <circle cx="20" cy="41" r="5" fill="#666" />
+              <circle cx="45" cy="41" r="5" fill="#666" />
+              <circle cx="70" cy="41" r="5" fill="#666" />
+              <circle cx="90" cy="41" r="5" fill="#666" />
+              <rect x="20" y="10" width="55" height="26" fill="#1E4D2B" rx="4" />
+              <rect x="45" y="14" width="24" height="14" fill="#faf8f2" rx="1" opacity="0.9" />
+              <path d="M70,25 L110,5 L130,25 L125,45" fill="none" stroke="#1E4D2B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M118,40 L130,45 L135,38 L122,35 Z" fill="#111" />
+            </g>
+            <circle cx="30" cy="50" r="8" fill="#333" />
+            <circle cx="30" cy="50" r="3" fill="#bbb" />
+            <circle cx="70" cy="50" r="8" fill="#333" />
+            <circle cx="70" cy="50" r="3" fill="#bbb" />
+            <circle cx="86" cy="50" r="8" fill="#333" />
+            <circle cx="86" cy="50" r="3" fill="#bbb" />
+            <circle cx="150" cy="50" r="8" fill="#333" />
+            <circle cx="150" cy="50" r="3" fill="#bbb" />
+            <circle cx="166" cy="50" r="8" fill="#333" />
+            <circle cx="166" cy="50" r="3" fill="#bbb" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer columns below the road animation -->
+    <div class="footer-upper container">
+      <!-- Column 1: Logo & Social -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Trinetra Exports Logo" class="footer-logo-img">
+        </div>
+        <p class="brand-tagline">
+          Partner with Trinetra Exports for trusted agricultural exports, premium organic jaggery, and dependable global trading solutions since 1937.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook" class="social-btn">f</a>
+          <a href="#" aria-label="X" class="social-btn">𝕏</a>
+          <a href="#" aria-label="Instagram" class="social-btn">📸</a>
+          <a href="#" aria-label="LinkedIn" class="social-btn">in</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Navigation -->
+      <div class="footer-col links-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#hero">» Home</a></li>
+          <li><a href="#about">» Our Story</a></li>
+          <li><a href="#divisions">» Portfolios</a></li>
+          <li><a href="#why-choose-us">» Why Choose Us</a></li>
+          <li><a href="#inquiry">» Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Get In Touch -->
+      <div class="footer-col contact-col">
+        <h3>Get In Touch</h3>
+        <div class="footer-contact-item">
+          <strong>ADDRESS:</strong>
+          <p>Kandoi Bazar Chowk, Gheekanta Rd,<br>Rajkot, Gujarat 360001, India</p>
+        </div>
+        <div class="footer-contact-item">
+          <strong>PHONE:</strong>
+          <p><a href="tel:+919104544404">+91 91045 44404</a></p>
+        </div>
+        <div class="footer-contact-item">
+          <strong>MAIL US:</strong>
+          <p><a href="mailto:trinetraexports7@gmail.com">trinetraexports7@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Column 4: Quick Inquiry -->
+      <div class="footer-col inquiry-col">
+        <h3>Quick Inquiry</h3>
+        <form class="footer-mini-form" id="footer-inquiry-form">
+          <input type="text" placeholder="Your Name" required name="name" id="footer-name">
+          <input type="tel" placeholder="Your Phone Number" required name="phone" id="footer-phone">
+          <button type="submit" class="footer-submit-btn">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Lower Copyright bar -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Trinetra Exports. All Rights Reserved. Developed and Designed with ❤</p>
+        <a href="#hero" class="back-to-top" aria-label="Scroll to top">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
