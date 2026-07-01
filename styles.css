@@ -28,6 +28,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -36,6 +37,8 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .container {
@@ -1614,6 +1617,12 @@ footer .logistics-scene {
   transform: translateX(30px);
 }
 
+@media (max-width: 768px) {
+  [data-reveal="left"], [data-reveal="right"] {
+    transform: translateY(30px);
+  }
+}
+
 [data-reveal].visible {
   opacity: 1;
   transform: none;
@@ -1760,11 +1769,12 @@ footer .logistics-scene {
     );
   }
 
-  /* Stats — keep compact horizontal row */
-  .hero-stats  { padding-top: 16px; }
-  .stat-item   { padding: 0 8px; }
-  .stat-num    { font-size: 22px; }
-  .stat-label  { font-size: 9px; letter-spacing: 0; }
+  /* Stats — stack them vertically */
+  .hero-stats  { flex-direction: column; gap: 0; padding-top: 24px; }
+  .stat-item   { padding: 16px 0; border-left: none !important; border-top: none; }
+  .stat-item + .stat-item { border-top: 1px solid var(--border) !important; }
+  .stat-num    { font-size: 26px; }
+  .stat-label  { font-size: 11px; letter-spacing: 0; }
 
   /* Globe/particles reduced */
   #hero-globe-canvas  { opacity: 0.22; transform: scale(0.65) translateX(18%); transform-origin: center right; }
