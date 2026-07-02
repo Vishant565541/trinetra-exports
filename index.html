@@ -38,10 +38,14 @@
             <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <button class="lang-item active" data-lang="en">English</button>
-            <button class="lang-item" data-lang="hi">हिन्दी (Hindi)</button>
-            <button class="lang-item" data-lang="es">Español (Spanish)</button>
-            <button class="lang-item" data-lang="de">Deutsch (German)</button>
+            <button class="lang-item active" data-lang="en">🇬🇧 English</button>
+            <button class="lang-item" data-lang="hi">🇮🇳 हिन्दी (Hindi)</button>
+            <button class="lang-item" data-lang="ar">🇸🇦 العربية (Arabic)</button>
+            <button class="lang-item" data-lang="fr">🇫🇷 Français (French)</button>
+            <button class="lang-item" data-lang="es">🇪🇸 Español (Spanish)</button>
+            <button class="lang-item" data-lang="pt">🇧🇷 Português (Portuguese)</button>
+            <button class="lang-item" data-lang="zh">🇨🇳 中文 (Chinese)</button>
+            <button class="lang-item" data-lang="de">🇩🇪 Deutsch (German)</button>
           </div>
         </div>
 
@@ -69,11 +73,15 @@
     <div class="mobile-lang-section">
       <p>Select Language</p>
       <div class="mobile-lang-grid">
-        <button class="mob-lang-btn active" data-lang="en">EN</button>
-        <button class="mob-lang-btn" data-lang="hi">HI</button>
-        <button class="mob-lang-btn" data-lang="es">ES</button>
-        <button class="mob-lang-btn" data-lang="de">DE</button>
-      </div>
+          <button class="mob-lang-btn active" data-lang="en">EN</button>
+          <button class="mob-lang-btn" data-lang="hi">HI</button>
+          <button class="mob-lang-btn" data-lang="ar">AR</button>
+          <button class="mob-lang-btn" data-lang="fr">FR</button>
+          <button class="mob-lang-btn" data-lang="es">ES</button>
+          <button class="mob-lang-btn" data-lang="pt">PT</button>
+          <button class="mob-lang-btn" data-lang="zh">ZH</button>
+          <button class="mob-lang-btn" data-lang="de">DE</button>
+        </div>
     </div>
     <a href="#inquiry" class="btn-primary mobile-menu-cta">Request Quote</a>
   </div>
@@ -498,25 +506,30 @@
 
         <div class="inquiry-form-card" data-reveal="right" data-delay="150">
           <form id="inquiryForm">
+            <!-- Web3Forms config - delivers to trinetraexports7@gmail.com -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+            <input type="hidden" name="subject" value="New Trade Inquiry - Trinetra Exports">
+            <input type="hidden" name="from_name" value="Trinetra Exports Website">
+            <input type="hidden" name="redirect" value="false">
             <div class="form-row">
               <div class="form-group">
                 <label for="fullName">Full Name *</label>
-                <input type="text" id="fullName" required placeholder="e.g., John Doe">
+                <input type="text" id="fullName" name="full_name" required placeholder="e.g., John Doe">
               </div>
               <div class="form-group">
                 <label for="companyName">Company / Firm Name *</label>
-                <input type="text" id="companyName" required placeholder="e.g., Global Foods Ltd">
+                <input type="text" id="companyName" name="company_name" required placeholder="e.g., Global Foods Ltd">
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="email">Work Email *</label>
-                <input type="email" id="email" required placeholder="e.g., buyer@company.com">
+                <input type="email" id="email" name="email" required placeholder="e.g., buyer@company.com">
               </div>
               <div class="form-group">
                 <label for="productCategory">Product Division of Interest *</label>
-                <select id="productCategory" required>
+                <select id="productCategory" name="product_category" required>
                   <option value="" disabled selected>Select a division...</option>
                   <option value="jaggery">Premium Jaggery</option>
                   <option value="spices">Indian Spices</option>
@@ -529,7 +542,7 @@
 
             <div class="form-group">
               <label for="message">Detailed Inquiry / Sourcing Volume Requirement *</label>
-              <textarea id="message" rows="5" required placeholder="Describe your destination port, shipping terms (FOB/CIF), and packaging/volume requirements..."></textarea>
+              <textarea id="message" name="message" rows="5" required placeholder="Describe your destination port, shipping terms (FOB/CIF), and packaging/volume requirements..."></textarea>
             </div>
 
             <button type="submit" class="btn-primary form-submit">Send Sourcing Request</button>

@@ -891,6 +891,274 @@ document.addEventListener('DOMContentLoaded', () => {
       footerHome: "» Startseite", footerStory: "» Geschichte", footerPortfolios: "» Portfolios",
       footerWCU: "» Warum Wir", footerContact2: "» Kontakt",
       footerCopyright: "© 2026 Trinetra Exports. Alle Rechte vorbehalten. Entwickelt und gestaltet mit ❤"
+    },
+
+    // ── ARABIC ──
+    ar: {
+      navHome: "الرئيسية", navStory: "قصتنا", navPortfolios: "محافظنا",
+      navWCU: "لماذا نحن", navInquiry: "استفسار", btnQuote: "طلب عرض سعر",
+      heroBadge: "تأسست منذ 2010",
+      heroTitle: "ربط <em>التراث</em> الهندي بالأسواق العالمية.",
+      heroDesc: "في تريناتا إكسبورتس، نجلب حلاوة جاكيري الهندي الأصيل والبهارات والسلع الأساسية إلى عملاء حول العالم. مصادر بعناية، مُصدَّرة بنزاهة.",
+      btnExplore: "استكشف المحفظة", btnLegacy: "إرثنا",
+      statLabel1: "جذور تاريخية", statLabel2: "جاكيري عضوي", statLabel3: "وجهات عالمية",
+      storyLabel: "منذ 2010",
+      storyTitle: "أفضل جودة وخدمة وجاكيري عضوي خالص",
+      storyP1: "في تريناتا إكسبورتس، نقدم حلاوة الجاكيري الهندي الممتاز للعملاء في جميع أنحاء العالم، محافظاً على طعمه الطبيعي ولونه الغني ونقاوته التقليدية.",
+      storyP2: "نقدم مجموعة مختارة من منتجات التصدير عالية الجودة تشمل الجاكيري الطبيعي والبهارات الهندية والمواد الغذائية الأساسية.",
+      storyLink: "استكشاف أقسام التصدير →",
+      productsLabel: "المنتجات المميزة", productsTitle: "مجموعتنا الممتازة للتصدير",
+      productsDesc: "استكشف مجموعتنا الممتازة من منتجات التصدير المختارة بعناية والمعبأة بأمان والمُسلَّمة في جميع أنحاء العالم.",
+      tabAgro: "قسم السلع الزراعية", tabMachinery: "قسم الآلات الثقيلة",
+      badgeFeatured: "منتج مميز",
+      jaggeryLocal: "جور / شاكار هندي", jaggeryName: "جاكيري هندي ممتاز",
+      jaggeryDesc: "مصدر من مزارع قصب السكر التراثية، يحافظ على الفيتامينات الطبيعية والحديد واللون الذهبي العميق والنقاوة التقليدية. خالٍ تماماً من المواد الكيميائية.",
+      jaggeryB1: "عطر غني", jaggeryB2: "خالٍ من المواد الكيميائية", jaggeryB3: "رقابة صارمة على الجودة",
+      spicesLocal: "مسالا وأعشاب", spicesName: "بهارات أصيلة",
+      spicesDesc: "مختارة خصيصاً لمحتواها الغني من الزيوت العطرية وعطرها الطازج ونكهتها المكثفة. نصدر الهيل والكركم والفلفل الأحمر والكمون.",
+      spicesB1: "عطر عالٍ", spicesB2: "رطوبة مثالية", spicesB3: "تغليف صديق للبيئة",
+      pulsesLocal: "مواد غذائية أساسية", pulsesName: "بقوليات وحبوب أساسية",
+      pulsesDesc: "حمص وعدس وأرز ومواد غذائية أساسية درجة أولى معالجة وفق المعايير الغذائية العالمية.",
+      pulsesB1: "نظيف بالفرز", pulsesB2: "غني بالمغذيات", pulsesB3: "كميات مخصصة",
+      machLocal: "معدات ثقيلة", machName: "حفارات زاحفة",
+      machDesc: "حفارات زاحفة عالية الأداء وموفرة للوقود لمشاريع البناء والتعدين الدولية.",
+      machB1: "للأعمال الشاقة", machB2: "امتثال انبعاثات عالمي", machB3: "دعم قطع الغيار",
+      wcuLabel: "عمليتنا", wcuTitle: "من الحقل إلى التصدير في أربع خطوات",
+      wcuDesc: "نجمع بين الشراكات المباشرة مع المزارعين ورقابة الجودة الصارمة واللوجستيات الجاهزة للتصدير.",
+      step1Title: "شراكات المزارعين", step1Desc: "نعمل مباشرة مع المزارعين المعتمدين للحصول على المواد الخام الممتازة والجاكيري العضوي من المصدر.",
+      step2Title: "فحص الجودة", step2Desc: "تخضع كل شحنة لعمليات تفتيش متعددة المراحل واختبارات مختبرية للرطوبة والنقاوة والسلامة.",
+      step3Title: "تغليف مخصص", step3Desc: "من أكياس التصدير بالجملة إلى العبوات المخصصة، نعبئ كل دفعة بمواد غذائية المستوى.",
+      step4Title: "لوجستيات التصدير", step4Desc: "يتولى مكتب التجارة لدينا الإجراءات الجمركية وخطوط الشحن البحري العالمية وشهادات الصحة النباتية.",
+      logisticsLabel: "صادرات زراعية موثوقة في جميع أنحاء العالم",
+      logisticsTitle: "دعونا نربط الأسواق العالمية معاً",
+      logisticsCTA: "أرسل استفسارك اليوم",
+      roadTitle: "الشحن البري", roadDesc: "نقل بري آمن وموثوق لمنتجاتك الزراعية.",
+      oceanTitle: "الشحن البحري", oceanDesc: "حلول شحن بحري دولي آمنة وفعالة.",
+      airTitle: "الشحن الجوي", airDesc: "شحن جوي سريع للتسليمات العاجلة.",
+      partnerLabel: "هل أنت مستعد للشراكة؟", partnerTitle: "ابدأ بعينة مجانية",
+      partnerDesc: "سواء كنت بحاجة إلى مجموعة عينات أو حاوية كاملة، فريقنا مستعد للمساعدة بأسعار تنافسية.",
+      partnerBtn1: "طلب عينة مجانية", partnerBtn2: "عرض جميع المنتجات",
+      inquiryLabel: "تواصل عالمياً", inquiryTitle: "ابدأ استفساراً تجارياً",
+      inquiryP1: "مهتم بشراء جاكيري عضوي أو بهارات هندية أو بقوليات أساسية أو شراء آلات مخصصة؟",
+      inquiryP2: "املأ نموذج الاستفسار الرسمي. سيتصل بك منسق تجاري إقليمي خلال 12 ساعة عمل.",
+      formNameLabel: "الاسم الكامل *", formNamePlaceholder: "مثال: أحمد محمد",
+      formCompanyLabel: "اسم الشركة / المؤسسة *", formCompanyPlaceholder: "مثال: Global Foods Ltd",
+      formEmailLabel: "البريد الإلكتروني *", formEmailPlaceholder: "مثال: buyer@company.com",
+      formCategoryLabel: "قسم المنتج المطلوب *", formCategoryDefault: "اختر قسماً...",
+      formOptJaggery: "جاكيري ممتاز", formOptSpices: "بهارات هندية",
+      formOptPulses: "حبوب / بقوليات", formOptExcavators: "حفارات زاحفة",
+      formOptAll: "أقسام متعددة",
+      formMsgLabel: "استفسار مفصل / متطلبات الكمية *",
+      formMsgPlaceholder: "صف ميناء الوجهة وشروط الشحن (FOB/CIF) ومتطلبات التغليف...",
+      formSubmitBtn: "إرسال طلب التوريد",
+      footerTagline: "شارك تريناتا إكسبورتس لصادرات زراعية موثوقة وجاكيري عضوي ممتاز وحلول تجارية عالمية منذ 2010.",
+      footerCompany: "الشركة", footerContact: "تواصل معنا", footerQuickInquiry: "استفسار سريع",
+      footerNamePlaceholder: "اسمك", footerPhonePlaceholder: "رقم هاتفك",
+      footerSendBtn: "إرسال الاستفسار",
+      footerHome: "» الرئيسية", footerStory: "» قصتنا", footerPortfolios: "» المنتجات",
+      footerWCU: "» لماذا نحن", footerContact2: "» تواصل",
+      footerCopyright: "© 2026 تريناتا إكسبورتس. جميع الحقوق محفوظة. صُمِّم بـ ❤"
+    },
+
+    // ── FRENCH ──
+    fr: {
+      navHome: "Accueil", navStory: "Notre Histoire", navPortfolios: "Portfolios",
+      navWCU: "Pourquoi Nous", navInquiry: "Demande", btnQuote: "Demander un Devis",
+      heroBadge: "ÉTABLI DEPUIS 2010",
+      heroTitle: "Relier le <em>Patrimoine</em> Indien aux Marchés Mondiaux.",
+      heroDesc: "Chez TRINETRA EXPORTS, nous apportons la douceur authentique du jaggery indien premium, des épices riches et des produits de base à des clients du monde entier. Sourcé avec soin, exporté avec intégrité.",
+      btnExplore: "Explorer le Portfolio", btnLegacy: "Notre Héritage",
+      statLabel1: "Racines Historiques", statLabel2: "Jaggery Bio", statLabel3: "Destinations Mondiales",
+      storyLabel: "Depuis 2010",
+      storyTitle: "Meilleure Qualité, Service & Jaggery Bio Pur",
+      storyP1: "Chez TRINETRA EXPORTS, nous apportons la douceur authentique du jaggery indien premium à des clients partout dans le monde. Sourcé de fermes soigneusement sélectionnées, notre jaggery préserve son goût naturel, sa couleur riche et sa pureté traditionnelle.",
+      storyP2: "Nous offrons une gamme soigneusement sélectionnée de produits d'exportation de qualité incluant le jaggery naturel, les épices indiennes et les denrées alimentaires essentielles.",
+      storyLink: "Explorer nos divisions d'exportation →",
+      productsLabel: "Produits Vedettes", productsTitle: "Notre Collection Premium d'Exportation",
+      productsDesc: "Explorez notre gamme premium de produits d'exportation soigneusement sourcés, emballés et livrés dans le monde entier.",
+      tabAgro: "Division Agro-Commodités", tabMachinery: "Division Machines Lourdes",
+      badgeFeatured: "Produit Vedette",
+      jaggeryLocal: "Gur / Shakkar Indien", jaggeryName: "Jaggery Indien Premium",
+      jaggeryDesc: "Sourcé de fermes de canne héritières, préservant les vitamines naturelles, la teneur en fer, la couleur dorée profonde et la pureté traditionnelle. Entièrement exempt de produits chimiques.",
+      jaggeryB1: "Arôme Riche", jaggeryB2: "Sans Chimiques", jaggeryB3: "Contrôle Qualité Strict",
+      spicesLocal: "Masala & Herbes", spicesName: "Épices Authentiques",
+      spicesDesc: "Sélectionnées spécifiquement pour leur teneur en huiles essentielles, leur arôme frais et leur saveur intense. Nous exportons cardamome, curcuma, piment rouge, cumin.",
+      spicesB1: "Arôme Élevé", spicesB2: "Humidité Parfaite", spicesB3: "Emballage Écologique",
+      pulsesLocal: "Denrées de Base", pulsesName: "Légumineuses & Céréales Essentielles",
+      pulsesDesc: "Pois chiches, lentilles, riz et denrées alimentaires de première qualité transformées selon les normes alimentaires mondiales.",
+      pulsesB1: "Nettoyé Sortex", pulsesB2: "Riche en Nutriments", pulsesB3: "Quantités Personnalisées",
+      machLocal: "Équipement Lourd", machName: "Excavateurs à Chenilles",
+      machDesc: "Excavateurs à chenilles haute performance et économes en carburant pour les projets internationaux de construction et d'exploitation minière.",
+      machB1: "Service Intensif", machB2: "Conformité Émissions Mondiale", machB3: "Support Pièces Détachées",
+      wcuLabel: "Notre Processus", wcuTitle: "Du Champ à l'Export en Quatre Étapes",
+      wcuDesc: "Nous combinons des partenariats directs avec les agriculteurs, des contrôles qualité rigoureux et une logistique prête à l'export.",
+      step1Title: "Partenariats Agriculteurs", step1Desc: "Nous travaillons directement avec des agriculteurs certifiés pour sourcer des matières premières premium et du jaggery bio à la source.",
+      step2Title: "Inspection Qualité", step2Desc: "Chaque expédition subit des inspections multi-étapes et des tests en laboratoire pour l'humidité, la pureté et la sécurité.",
+      step3Title: "Emballage Personnalisé", step3Desc: "Des sacs d'exportation en vrac aux emballages retail sur mesure, nous emballons chaque lot avec des matériaux alimentaires.",
+      step4Title: "Logistique d'Exportation", step4Desc: "Notre bureau commercial gère les dédouanements, les lignes de fret maritime mondial et les certifications phytosanitaires.",
+      logisticsLabel: "Exportations Agricoles Fiables dans le Monde",
+      logisticsTitle: "Connectons les Marchés Mondiaux Ensemble",
+      logisticsCTA: "Envoyez Votre Demande Aujourd'hui",
+      roadTitle: "Fret Routier", roadDesc: "Transport terrestre sûr et fiable.",
+      oceanTitle: "Fret Maritime", oceanDesc: "Solutions de fret maritime international sécurisées.",
+      airTitle: "Fret Aérien", airDesc: "Expédition mondiale rapide pour livraisons urgentes.",
+      partnerLabel: "Prêt à Collaborer?", partnerTitle: "Commencez avec un Échantillon Gratuit",
+      partnerDesc: "Que vous ayez besoin d'un kit d'échantillons ou d'un conteneur complet, notre équipe est prête à aider avec des prix compétitifs.",
+      partnerBtn1: "Demander un Échantillon Gratuit", partnerBtn2: "Voir Tous les Produits",
+      inquiryLabel: "Se Connecter Mondialement", inquiryTitle: "Initier une Demande Commerciale",
+      inquiryP1: "Intéressé par notre jaggery bio, épices indiennes, légumineuses essentielles ou achat de machines personnalisées?",
+      inquiryP2: "Remplissez notre fiche de demande formelle. Un coordinateur commercial régional vous contactera dans les 12 heures ouvrables.",
+      formNameLabel: "Nom Complet *", formNamePlaceholder: "ex., Jean Dupont",
+      formCompanyLabel: "Nom de Société / Entreprise *", formCompanyPlaceholder: "ex., Global Foods SA",
+      formEmailLabel: "Email Professionnel *", formEmailPlaceholder: "ex., acheteur@societe.com",
+      formCategoryLabel: "Division Produit d'Intérêt *", formCategoryDefault: "Sélectionner une division...",
+      formOptJaggery: "Jaggery Premium", formOptSpices: "Épices Indiennes",
+      formOptPulses: "Céréales / Légumineuses", formOptExcavators: "Excavateurs à Chenilles",
+      formOptAll: "Plusieurs Divisions",
+      formMsgLabel: "Demande Détaillée / Volume de Sourcing *",
+      formMsgPlaceholder: "Décrivez votre port de destination, conditions d'expédition (FOB/CIF) et exigences d'emballage...",
+      formSubmitBtn: "Envoyer la Demande de Sourcing",
+      footerTagline: "Partenaire de Trinetra Exports pour des exportations agricoles fiables, du jaggery bio premium et des solutions commerciales mondiales depuis 2010.",
+      footerCompany: "Entreprise", footerContact: "Nous Contacter", footerQuickInquiry: "Demande Rapide",
+      footerNamePlaceholder: "Votre Nom", footerPhonePlaceholder: "Votre Numéro de Téléphone",
+      footerSendBtn: "Envoyer la Demande",
+      footerHome: "» Accueil", footerStory: "» Notre Histoire", footerPortfolios: "» Produits",
+      footerWCU: "» Pourquoi Nous", footerContact2: "» Contact",
+      footerCopyright: "© 2026 Trinetra Exports. Tous Droits Réservés. Développé avec ❤"
+    },
+
+    // ── PORTUGUESE ──
+    pt: {
+      navHome: "Início", navStory: "Nossa História", navPortfolios: "Portfólios",
+      navWCU: "Por Que Nós", navInquiry: "Consulta", btnQuote: "Solicitar Cotação",
+      heroBadge: "ESTABELECIDO DESDE 2010",
+      heroTitle: "Conectando o <em>Patrimônio</em> Indiano aos Mercados Globais.",
+      heroDesc: "Na TRINETRA EXPORTS, levamos a autêntica doçura do jaggery indiano premium, especiarias ricas e commodities essenciais a clientes em todo o mundo. Adquirido com cuidado, exportado com integridade.",
+      btnExplore: "Explorar Portfólio", btnLegacy: "Nosso Legado",
+      statLabel1: "Raízes Históricas", statLabel2: "Jaggery Orgânico", statLabel3: "Destinos Globais",
+      storyLabel: "Desde 2010",
+      storyTitle: "Melhor Qualidade, Serviço & Jaggery Orgânico Puro",
+      storyP1: "Na TRINETRA EXPORTS, levamos a doçura autêntica do jaggery indiano premium a clientes em todo o mundo. Adquirido de fazendas cuidadosamente selecionadas, nosso jaggery preserva seu sabor natural, cor rica e pureza tradicional.",
+      storyP2: "Oferecemos uma gama cuidadosamente selecionada de produtos de exportação de qualidade incluindo jaggery natural, especiarias indianas e itens essenciais.",
+      storyLink: "Explorar nossas divisões de exportação →",
+      productsLabel: "Produtos em Destaque", productsTitle: "Nossa Coleção Premium de Exportação",
+      productsDesc: "Explore nossa gama premium de produtos de exportação cuidadosamente adquiridos, embalados com segurança e entregues em todo o mundo.",
+      tabAgro: "Divisão Agro-Commodities", tabMachinery: "Divisão de Maquinário Pesado",
+      badgeFeatured: "Produto em Destaque",
+      jaggeryLocal: "Gur / Shakkar Indiano", jaggeryName: "Jaggery Indiano Premium",
+      jaggeryDesc: "Adquirido de fazendas tradicionais de cana, preservando vitaminas naturais, teor de ferro, cor dourada profunda e pureza tradicional. Completamente livre de químicos.",
+      jaggeryB1: "Aroma Rico", jaggeryB2: "Sem Químicos", jaggeryB3: "Controle de Qualidade Rigoroso",
+      spicesLocal: "Masala & Ervas", spicesName: "Especiarias Autênticas",
+      spicesDesc: "Selecionadas especificamente por seu rico teor de óleos essenciais, aroma fresco e sabor intenso. Exportamos cardamomo, cúrcuma, pimenta vermelha, cominho.",
+      spicesB1: "Alto Aroma", spicesB2: "Umidade Perfeita", spicesB3: "Embalagem Ecológica",
+      pulsesLocal: "Alimentos Básicos", pulsesName: "Leguminosas & Grãos Essenciais",
+      pulsesDesc: "Grão-de-bico, lentilhas, arroz e alimentos básicos de primeira qualidade processados conforme padrões alimentares globais.",
+      pulsesB1: "Limpo por Sortex", pulsesB2: "Rico em Nutrientes", pulsesB3: "Quantidades Personalizadas",
+      machLocal: "Equipamento Pesado", machName: "Escavadeiras de Esteira",
+      machDesc: "Escavadeiras de esteira de alto desempenho e eficiência de combustível para projetos internacionais de construção e mineração.",
+      machB1: "Serviço Pesado", machB2: "Conformidade Global de Emissões", machB3: "Suporte de Peças",
+      wcuLabel: "Nosso Processo", wcuTitle: "Do Campo à Exportação em Quatro Etapas",
+      wcuDesc: "Combinamos parcerias diretas com agricultores, controles de qualidade rigorosos e logística pronta para exportação.",
+      step1Title: "Parcerias com Agricultores", step1Desc: "Trabalhamos diretamente com agricultores certificados para adquirir matérias-primas premium e jaggery orgânico na fonte.",
+      step2Title: "Inspeção de Qualidade", step2Desc: "Cada remessa passa por inspeções em múltiplos estágios e testes laboratoriais para umidade, pureza e segurança.",
+      step3Title: "Embalagem Personalizada", step3Desc: "De sacas de exportação a granel a embalagens retail personalizadas, embalamos cada lote com materiais grau alimentício.",
+      step4Title: "Logística de Exportação", step4Desc: "Nossa mesa de comércio cuida de desembaraços aduaneiros, linhas de frete marítimo global e certificações fitossanitárias.",
+      logisticsLabel: "Exportações Agrícolas Confiáveis no Mundo Todo",
+      logisticsTitle: "Vamos Conectar os Mercados Globais Juntos",
+      logisticsCTA: "Envie Sua Consulta Hoje",
+      roadTitle: "Frete Rodoviário", roadDesc: "Transporte terrestre seguro e confiável.",
+      oceanTitle: "Frete Marítimo", oceanDesc: "Soluções de carga marítima internacional seguras.",
+      airTitle: "Frete Aéreo", airDesc: "Envio global rápido para entregas urgentes.",
+      partnerLabel: "Pronto para Parcerias?", partnerTitle: "Comece com uma Amostra Gratuita",
+      partnerDesc: "Seja um kit de amostras ou um contêiner completo, nossa equipe está pronta para ajudar com preços competitivos.",
+      partnerBtn1: "Solicitar Amostra Gratuita", partnerBtn2: "Ver Todos os Produtos",
+      inquiryLabel: "Conectar Globalmente", inquiryTitle: "Iniciar uma Consulta Comercial",
+      inquiryP1: "Interessado em adquirir nosso jaggery orgânico, especiarias indianas, leguminosas essenciais ou maquinário personalizado?",
+      inquiryP2: "Preencha nossa ficha de consulta formal. Um coordenador comercial regional entrará em contato em 12 horas úteis.",
+      formNameLabel: "Nome Completo *", formNamePlaceholder: "ex., João Silva",
+      formCompanyLabel: "Nome da Empresa / Firma *", formCompanyPlaceholder: "ex., Global Foods Ltda",
+      formEmailLabel: "Email Corporativo *", formEmailPlaceholder: "ex., comprador@empresa.com",
+      formCategoryLabel: "Divisão de Produto de Interesse *", formCategoryDefault: "Selecionar uma divisão...",
+      formOptJaggery: "Jaggery Premium", formOptSpices: "Especiarias Indianas",
+      formOptPulses: "Grãos / Leguminosas", formOptExcavators: "Escavadeiras de Esteira",
+      formOptAll: "Múltiplas Divisões",
+      formMsgLabel: "Consulta Detalhada / Requisito de Volume *",
+      formMsgPlaceholder: "Descreva seu porto de destino, termos de envio (FOB/CIF) e requisitos de embalagem...",
+      formSubmitBtn: "Enviar Solicitação de Fornecimento",
+      footerTagline: "Parceiro da Trinetra Exports para exportações agrícolas confiáveis, jaggery orgânico premium e soluções comerciais globais desde 2010.",
+      footerCompany: "Empresa", footerContact: "Entre em Contato", footerQuickInquiry: "Consulta Rápida",
+      footerNamePlaceholder: "Seu Nome", footerPhonePlaceholder: "Seu Número de Telefone",
+      footerSendBtn: "Enviar Consulta",
+      footerHome: "» Início", footerStory: "» Nossa História", footerPortfolios: "» Produtos",
+      footerWCU: "» Por Que Nós", footerContact2: "» Contato",
+      footerCopyright: "© 2026 Trinetra Exports. Todos os Direitos Reservados. Desenvolvido com ❤"
+    },
+
+    // ── CHINESE SIMPLIFIED ──
+    zh: {
+      navHome: "首页", navStory: "我们的故事", navPortfolios: "产品组合",
+      navWCU: "为什么选择我们", navInquiry: "询盘", btnQuote: "请求报价",
+      heroBadge: "成立于2010年",
+      heroTitle: "连接印度<em>传承</em>与全球市场。",
+      heroDesc: "在TRINETRA EXPORTS，我们将优质印度粗糖的纯正甜蜜、香料和基本商品带给全球客户。用心采购，诚信出口。",
+      btnExplore: "探索产品组合", btnLegacy: "我们的传承",
+      statLabel1: "历史根源", statLabel2: "有机粗糖", statLabel3: "全球目的地",
+      storyLabel: "自2010年起",
+      storyTitle: "最优品质、服务与纯正有机粗糖",
+      storyP1: "在TRINETRA EXPORTS，我们将优质印度粗糖的纯正甜蜜带给全球客户。从精心挑选的农场采购，注重品质加工，我们的粗糖保留了其天然口味、丰富色泽和传统纯度。",
+      storyP2: "我们提供精心挑选的出口品质产品系列，包括天然粗糖、印度香料和必需食品杂货。",
+      storyLink: "探索我们的出口部门 →",
+      productsLabel: "精选产品", productsTitle: "我们的优质出口系列",
+      productsDesc: "探索我们精心采购、安全包装并向全球交付的优质出口产品系列。",
+      tabAgro: "农业商品部门", tabMachinery: "重型机械部门",
+      badgeFeatured: "精选产品",
+      jaggeryLocal: "印度古尔/沙卡", jaggeryName: "优质印度粗糖",
+      jaggeryDesc: "来自传统甘蔗农场，保留天然维生素、铁含量、深金色和传统纯度。完全不含化学品或合成漂白剂。",
+      jaggeryB1: "浓郁香气", jaggeryB2: "无化学品", jaggeryB3: "严格质量控制",
+      spicesLocal: "马萨拉和香草", spicesName: "正宗香料",
+      spicesDesc: "专门挑选富含精油、新鲜香气和浓郁风味的香料。我们出口小豆蔻、姜黄、红辣椒、黑胡椒和孜然。",
+      spicesB1: "高香气", spicesB2: "完美湿度", spicesB3: "环保包装",
+      pulsesLocal: "基本食品", pulsesName: "必需豆类和谷物",
+      pulsesDesc: "鹰嘴豆、扁豆、大米和优质基本食品，按全球食品标准加工。",
+      pulsesB1: "色选清洁", pulsesB2: "营养丰富", pulsesB3: "定制数量",
+      machLocal: "重型设备", machName: "履带式挖掘机",
+      machDesc: "高性能、省油的履带式挖掘机，适用于国际建筑、采矿和农业排水项目。",
+      machB1: "重型作业", machB2: "全球排放合规", machB3: "备件支持",
+      wcuLabel: "我们的流程", wcuTitle: "从农场到出口四个简单步骤",
+      wcuDesc: "我们将直接农民合作伙伴关系、严格质量控制检查和出口就绪物流相结合。",
+      step1Title: "农民合作伙伴关系", step1Desc: "我们直接与认证种植者合作，在源头采购优质原材料和有机粗糖。",
+      step2Title: "质量检验", step2Desc: "每批货物都经过多阶段检验和实验室测试，检测水分、纯度和安全性。",
+      step3Title: "定制包装", step3Desc: "从散装出口袋到定制零售包装，我们使用食品级材料包装每批产品。",
+      step4Title: "出口物流", step4Desc: "我们的贸易台处理海关清关、全球海运货运线路和植物检疫证书。",
+      logisticsLabel: "全球值得信赖的农业出口",
+      logisticsTitle: "让我们共同连接全球市场",
+      logisticsCTA: "立即发送询盘",
+      roadTitle: "公路货运", roadDesc: "安全可靠的地面运输服务。",
+      oceanTitle: "海运货运", oceanDesc: "安全的国际海上货运解决方案。",
+      airTitle: "空运货运", airDesc: "紧急交付的快速全球运输。",
+      partnerLabel: "准备好合作了吗？", partnerTitle: "从免费样品开始",
+      partnerDesc: "无论您需要样品套装还是整个集装箱，我们的团队随时准备以具竞争力的价格提供帮助。",
+      partnerBtn1: "申请免费样品", partnerBtn2: "查看所有产品",
+      inquiryLabel: "全球连接", inquiryTitle: "发起贸易询盘",
+      inquiryP1: "有兴趣采购我们的有机粗糖、印度香料、基本豆类或定制机械？",
+      inquiryP2: "填写我们的正式询盘表格。地区贸易协调员将在12个工作小时内与您联系。",
+      formNameLabel: "全名 *", formNamePlaceholder: "例如，张三",
+      formCompanyLabel: "公司/企业名称 *", formCompanyPlaceholder: "例如，Global Foods有限公司",
+      formEmailLabel: "工作邮箱 *", formEmailPlaceholder: "例如，buyer@company.com",
+      formCategoryLabel: "感兴趣的产品部门 *", formCategoryDefault: "选择部门...",
+      formOptJaggery: "优质粗糖", formOptSpices: "印度香料",
+      formOptPulses: "谷物/豆类", formOptExcavators: "履带式挖掘机",
+      formOptAll: "多个部门",
+      formMsgLabel: "详细询盘/采购量需求 *",
+      formMsgPlaceholder: "请描述您的目的港、运输条款（FOB/CIF）和包装要求...",
+      formSubmitBtn: "发送采购请求",
+      footerTagline: "与Trinetra Exports合作，自2010年起提供可信的农业出口、优质有机粗糖和全球贸易解决方案。",
+      footerCompany: "公司", footerContact: "联系我们", footerQuickInquiry: "快速询盘",
+      footerNamePlaceholder: "您的姓名", footerPhonePlaceholder: "您的电话号码",
+      footerSendBtn: "发送询盘",
+      footerHome: "» 首页", footerStory: "» 我们的故事", footerPortfolios: "» 产品",
+      footerWCU: "» 为什么选择我们", footerContact2: "» 联系",
+      footerCopyright: "© 2026 Trinetra Exports. 保留所有权利。用 ❤ 开发设计"
     }
   };
 
@@ -1112,61 +1380,102 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footerCopy) footerCopy.textContent = dict.footerCopyright;
   }
 
-  // ── INQUIRY FORM SUBMISSION ──
+  // ── INQUIRY FORM SUBMISSION (sends to trinetraexports7@gmail.com via Formspree) ──
   const inquiryForm = document.getElementById('inquiryForm');
   const formStatus = document.getElementById('formStatus');
 
-  inquiryForm.addEventListener('submit', (e) => {
+  // ← Paste your Formspree endpoint URL here (from formspree.io/forms)
+  const FORMSPREE_URL = 'https://formspree.io/f/xwvdwkjr';
+
+  inquiryForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Disable submit button during processing
+
     const submitBtn = inquiryForm.querySelector('.form-submit');
     const originalBtnText = submitBtn.textContent;
-    submitBtn.textContent = 'Processing request...';
+    submitBtn.textContent = '⏳ Sending...';
     submitBtn.disabled = true;
 
-    // Simulate API request call
-    setTimeout(() => {
-      // Re-enable submit button
+    const formData = {
+      name: document.getElementById('fullName')?.value || '',
+      company: document.getElementById('companyName')?.value || '',
+      email: document.getElementById('email')?.value || '',
+      product: document.getElementById('productCategory')?.value || '',
+      message: document.getElementById('message')?.value || '',
+      _subject: 'New Trade Inquiry – Trinetra Exports',
+      _replyto: document.getElementById('email')?.value || '',
+    };
+
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const data = await res.json();
+
+      if (res.ok) {
+        formStatus.textContent = '✅ Thank you! Your sourcing inquiry has been sent to Trinetra Exports. A trade coordinator will contact you within 12 business hours.';
+        formStatus.className = 'form-status success';
+        inquiryForm.reset();
+      } else {
+        throw new Error(data?.errors?.[0]?.message || 'Submission failed');
+      }
+    } catch (err) {
+      formStatus.textContent = '❌ Error sending inquiry. Please email directly: trinetraexports7@gmail.com';
+      formStatus.className = 'form-status error';
+    } finally {
       submitBtn.textContent = originalBtnText;
       submitBtn.disabled = false;
-
-      // Display beautiful success status message
-      formStatus.textContent = 'Thank you! Your sourcing inquiry has been successfully sent. A regional coordinator will contact you shortly.';
-      formStatus.className = 'form-status success';
-
-      // Clear input fields
-      inquiryForm.reset();
-
-      // Clear success banner after 8 seconds
       setTimeout(() => {
         formStatus.textContent = '';
         formStatus.className = 'form-status';
-      }, 8000);
-
-    }, 1500);
+      }, 10000);
+    }
   });
 
   // ── FOOTER MINI INQUIRY FORM SUBMISSION ──
   const footerInquiryForm = document.getElementById('footer-inquiry-form');
   if (footerInquiryForm) {
-    footerInquiryForm.addEventListener('submit', (e) => {
+    footerInquiryForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
+
       const submitBtn = footerInquiryForm.querySelector('.footer-submit-btn');
-      const originalBtnText = submitBtn.innerHTML;
+      const originalBtnHTML = submitBtn.innerHTML;
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        submitBtn.innerHTML = originalBtnText;
-        submitBtn.disabled = false;
+      const name = document.getElementById('footer-name')?.value || '';
+      const phone = document.getElementById('footer-phone')?.value || '';
 
-        alert('Thank you! Your trade inquiry has been received. Our team will contact you shortly.');
-        footerInquiryForm.reset();
-      }, 1200);
+      try {
+        const res = await fetch(FORMSPREE_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            name,
+            phone,
+            message: `Quick Inquiry | Name: ${name} | Phone: ${phone}`,
+            _subject: 'Quick Inquiry – Trinetra Exports Website'
+          })
+        });
+
+        if (res.ok) {
+          submitBtn.innerHTML = originalBtnHTML;
+          submitBtn.disabled = false;
+          alert('✅ Inquiry received! Our team will call you shortly.');
+          footerInquiryForm.reset();
+        } else {
+          throw new Error('Failed');
+        }
+      } catch (err) {
+        submitBtn.innerHTML = originalBtnHTML;
+        submitBtn.disabled = false;
+        alert('❌ Error. Please call: +91 91045 44404');
+      }
     });
   }
+
+
 });
 
 // ── INQUIRY POPUP MODAL ──
