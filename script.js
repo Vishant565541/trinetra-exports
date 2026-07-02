@@ -1168,3 +1168,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ── INQUIRY POPUP MODAL ──
+(function initInquiryPopup() {
+  const overlay   = document.getElementById('inquiryPopup');
+  const closeBtn  = document.getElementById('popupClose');
+  const skipBtn   = document.getElementById('popupSkip');
+  const form      = document.getElementById('popupInquiryForm');
+  const status    = document.getElementById('popupFormStatus');
+
+  if (!overlay) return;
+
+  // Open popup after 1 second on every page load
+  function openPopup() {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Auto-open after 1s delay
+  setTimeout(openPopup, 1000);
+
+  // Close on X button
+  if (closeBtn) closeBtn.addEventListener('click', closePopup);
+
+  // Close on "skip" link
+  if (skipBtn) skipBtn.addEventListener('click', closePopup);
+
+  // Close on overlay background click
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closePopup();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  // Handle form submission
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('.popup-submit-btn');
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending...';
+      submitBtn.disabled = true;
+
+      setTimeout(() => {
+        submitBtn.innerHTML = originalHTML;
+        submitBtn.disabled = false;
+
+        status.textContent = '✅ Thank you! We will contact you within 24 hours.';
+        status.className = 'popup-form-status success';
+        form.reset();
+
+        setTimeout(closePopup, 2500);
+      }, 1200);
+    });
+  }
+})();
