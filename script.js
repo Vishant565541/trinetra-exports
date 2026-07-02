@@ -1395,30 +1395,27 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = '⏳ Sending...';
     submitBtn.disabled = true;
 
-    const formData = {
-      name: document.getElementById('fullName')?.value || '',
-      company: document.getElementById('companyName')?.value || '',
-      email: document.getElementById('email')?.value || '',
-      product: document.getElementById('productCategory')?.value || '',
-      message: document.getElementById('message')?.value || '',
-      _subject: 'New Trade Inquiry – Trinetra Exports',
-      _replyto: document.getElementById('email')?.value || '',
-    };
+    // Use FormData for 100% compatibility with Formspree
+    const form = e.target;
+    const data = new FormData(form);
 
     try {
-      const res = await fetch(FORMSPREE_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(formData)
+      const res = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
       });
-      const data = await res.json();
+      
+      const result = await res.json();
 
       if (res.ok) {
         formStatus.textContent = '✅ Thank you! Your sourcing inquiry has been sent to Trinetra Exports. A trade coordinator will contact you within 12 business hours.';
         formStatus.className = 'form-status success';
         inquiryForm.reset();
       } else {
-        throw new Error(data?.errors?.[0]?.message || 'Submission failed');
+        throw new Error(result?.errors?.[0]?.message || 'Submission failed');
       }
     } catch (err) {
       formStatus.textContent = '❌ Error sending inquiry. Please email directly: trinetraexports7@gmail.com';
@@ -1444,19 +1441,17 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
 
-      const name = document.getElementById('footer-name')?.value || '';
-      const phone = document.getElementById('footer-phone')?.value || '';
+      const form = e.target;
+      const data = new FormData(form);
+      data.append('_subject', 'Quick Inquiry – Trinetra Exports Website');
 
       try {
-        const res = await fetch(FORMSPREE_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            name,
-            phone,
-            message: `Quick Inquiry | Name: ${name} | Phone: ${phone}`,
-            _subject: 'Quick Inquiry – Trinetra Exports Website'
-          })
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
         });
 
         if (res.ok) {
