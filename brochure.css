@@ -1,0 +1,1121 @@
+/* ==========================================================================
+   PREMIUM JAGGERY BROCHURE STYLESHEET - 1-TO-1 REFERENCE REPLICA
+   ========================================================================== */
+
+:root {
+  /* Color Palette (Earthy, Organic Jaggery Theme) */
+  --b-brown-dark: #5A3E2B;      /* Rich chocolate cocoa background */
+  --b-brown-darker: #4E3524;    /* Deep chocolate cocoa for sidebar buttons */
+  --b-brown-text: #5A3E2B;      /* Standard text brown */
+  --b-gold: #B8955A;            /* Warm muted gold for headers and accents */
+  --b-gold-light: #F2EADA;      /* Soft warm tan for block quotes and highlights */
+  --b-cream-bg: #EADFC9;        /* Warm background tan shown on the printed sheet background */
+  --b-paper-bg: #F5EFEB;        /* Soft warm paper color for pages/panels */
+  --b-tan-border: #D1C5B0;      /* Border color matching original tan cards */
+  --b-white: #FFFFFF;           /* Pure white card backgrounds */
+  
+  /* Fonts */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Layout Specs */
+  --shadow-sm: 0 2px 12px rgba(90, 62, 43, 0.06);
+  --shadow-md: 0 12px 36px rgba(90, 62, 43, 0.12);
+}
+
+/* Base resets & fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #D6CAB2; /* Ambient tan border */
+  color: var(--b-brown-text);
+  line-height: 1.4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── FLOATING WEB HEADER (no-print) ── */
+.brochure-bar {
+  width: 100%;
+  background-color: var(--b-brown-dark);
+  color: #FDFBF7;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-logo img {
+  height: 40px;
+  width: auto;
+  filter: brightness(1.2);
+}
+
+.bar-logo span {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.bar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-bar-print {
+  background-color: var(--b-gold);
+  color: var(--b-brown-dark);
+  border: none;
+  padding: 8px 18px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-bar-print:hover {
+  background-color: #FDFBF7;
+  color: var(--b-brown-dark);
+  transform: translateY(-1px);
+}
+
+.btn-bar-back {
+  background-color: transparent;
+  color: #FDFBF7;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 7px 16px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-bar-back:hover {
+  border-color: #FDFBF7;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ── DIGITAL WEB PREVIEW CONTROLLER ── */
+.brochure-container {
+  width: 100%;
+  max-width: 960px; /* Reduced from 1280px to solve blank space */
+  margin: 20px auto;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.brochure-tabs {
+  display: flex;
+  background-color: rgba(90, 62, 43, 0.1);
+  padding: 5px;
+  border-radius: 30px;
+  gap: 4px;
+}
+
+.tab-trigger {
+  background: none;
+  border: none;
+  padding: 8px 20px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--b-brown-dark);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-trigger.active {
+  background-color: var(--b-brown-dark);
+  color: #FDFBF7;
+}
+
+.brochure-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  background-color: var(--b-paper-bg);
+}
+
+.brochure-pages-wrapper {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 300%;
+}
+
+/* ── PHYSICAL SHEET FORM FACTOR (Prints exactly as A4 Landscape) ── */
+.brochure-page {
+  width: 33.333%;
+  flex-shrink: 0;
+  background-color: var(--b-paper-bg);
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1.414 / 1; /* A4 aspect ratio */
+  min-height: 760px;
+  border: 1px solid var(--b-tan-border);
+}
+
+/* ── PAGE 1: COVER PAGE LAYOUT ── */
+.p1-cover-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100%;
+}
+
+/* Page 1 Left Cocoa Bar */
+.p1-cover-sidebar {
+  background-color: var(--b-brown-dark);
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.cover-sidebar-button {
+  background-color: var(--b-brown-darker);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px 15px;
+  border-radius: 4px;
+  color: #FDFBF7;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.cover-sidebar-button:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Page 1 Right Cream Panel */
+.p1-cover-main {
+  background-color: var(--b-paper-bg);
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.p1-title-group h2 {
+  font-family: var(--font-sans);
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: var(--b-brown-dark);
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+.p1-title-group p {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--b-brown-text);
+  font-weight: 500;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+.p1-image-center {
+  width: 100%;
+  max-width: 520px;
+  height: 380px;
+  margin: 30px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--b-tan-border);
+  background-color: #EEE;
+}
+
+.p1-image-center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── PAGE 2: ABOUT, PROCESS & PRODUCT SPECIFICATIONS ── */
+.p2-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100%;
+}
+
+/* Page 2 Left Cocoa Panel */
+.p2-sidebar {
+  background-color: var(--b-brown-dark);
+  color: #FDFBF7;
+  padding: 25px 20px; /* Reduced padding from 40px 30px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p2-about h3 {
+  font-family: var(--font-sans);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #FDFBF7;
+  letter-spacing: 1px;
+  margin-bottom: 12px; /* Reduced margin from 25px */
+  border-bottom: 2px solid var(--b-gold);
+  padding-bottom: 6px; /* Reduced padding from 10px */
+}
+
+.p2-about p {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: #E3D6C2;
+  margin-bottom: 8px; /* Reduced margin from 16px */
+  line-height: 1.4; /* Reduced line-height from 1.5 */
+  font-weight: 400;
+}
+
+.p2-about p strong {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.p2-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap from 15px */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px; /* Reduced padding from 25px */
+}
+
+.p2-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.p2-stat-val {
+  font-family: var(--font-sans);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--b-gold);
+  min-width: 60px;
+}
+
+.p2-stat-lbl {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: #FDFBF7;
+  line-height: 1.2;
+}
+
+/* Page 2 Right White Panel */
+.p2-main {
+  background-color: var(--b-white);
+  padding: 20px 25px; /* Reduced padding from 35px 40px */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.p2-section-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--b-brown-dark);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.p2-section-title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--b-tan-border);
+}
+
+.p2-process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px; /* Reduced gap from 15px 25px */
+  margin-bottom: 15px; /* Reduced margin from 25px */
+}
+
+.p2-proc-card {
+  display: flex;
+  gap: 12px;
+}
+
+.p2-proc-num {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--b-gold);
+  line-height: 1;
+}
+
+.p2-proc-text h4 {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--b-brown-dark);
+  margin-bottom: 4px;
+}
+
+.p2-proc-text p {
+  font-size: 0.78rem;
+  color: #7A695D;
+  line-height: 1.35;
+}
+
+.p2-products-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px; /* Reduced gap from 20px */
+  margin-bottom: 15px; /* Reduced margin from 20px */
+}
+
+.p2-prod-img {
+  width: 100%;
+  height: 85px; /* Reduced image height from 120px to save 35px vertical space */
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px; /* Reduced margin from 10px */
+  border: 1px solid var(--b-tan-border);
+}
+
+.p2-prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p2-prod-box {
+  background-color: var(--b-paper-bg);
+  border: 1px solid var(--b-tan-border);
+  border-radius: 6px;
+  padding: 8px 12px; /* Reduced padding from 12px 15px */
+}
+
+.p2-prod-box h4 {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--b-brown-dark);
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p2-badge {
+  font-size: 0.65rem;
+  background-color: var(--b-gold);
+  color: #FFF;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.p2-badge.granulated {
+  background-color: var(--b-brown-dark);
+}
+
+.p2-prod-desc {
+  font-size: 0.75rem;
+  color: #7A695D;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.p2-spec-list {
+  list-style: none;
+  font-size: 0.78rem;
+  border-top: 1px solid rgba(90, 62, 43, 0.1);
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.p2-spec-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p2-spec-list li strong {
+  color: var(--b-brown-dark);
+}
+
+.p2-tag-strip {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.p2-tag {
+  font-size: 0.65rem;
+  background-color: var(--b-white);
+  border: 1px solid var(--b-tan-border);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: #7A695D;
+}
+
+.p2-certs-footer {
+  border-top: 1px solid var(--b-tan-border);
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.p2-cert-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--b-tan-border);
+  border-radius: 4px;
+  padding: 8px 4px;
+  text-align: center;
+}
+
+.p2-cert-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--b-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--b-gold);
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.p2-cert-text h5 {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--b-brown-dark);
+  line-height: 1;
+}
+
+.p2-cert-text p {
+  font-size: 0.6rem;
+  color: #7A695D;
+}
+
+/* ── PAGE 3: 3-COLUMN DETAILS (replica of Image 1) ── */
+.p3-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+
+/* Column 1 - Cream Specs */
+.p3-col-1 {
+  background-color: var(--b-paper-bg);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--b-tan-border);
+  height: 100%;
+}
+
+.p3-col-1-header h2 {
+  font-family: var(--font-sans);
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--b-brown-dark);
+  line-height: 1;
+}
+
+.p3-col-1-header p {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--b-brown-text);
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.p3-col-1-intro {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #7A695D;
+  margin: 10px 0;
+}
+
+/* Feature Stack with borders */
+.p3-features-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.p3-feature-item {
+  font-family: var(--font-sans);
+  font-weight: bold;
+  font-size: 0.82rem;
+  color: var(--b-brown-dark);
+  padding: 6px 0;
+  border-bottom: 1.5px solid var(--b-tan-border);
+}
+
+.p3-feature-item:first-child {
+  border-top: 1.5px solid var(--b-tan-border);
+}
+
+.p3-p-box {
+  background-color: var(--b-white);
+  border: 1px solid var(--b-tan-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.p3-p-box h4 {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: bold;
+  color: var(--b-brown-dark);
+  margin-bottom: 2px;
+}
+
+.p3-p-box p {
+  font-size: 0.74rem;
+  color: #7A695D;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p3-col-1-image {
+  height: 140px; /* Increased to solve blank space */
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--b-tan-border);
+  box-shadow: var(--shadow-sm);
+  background-color: #EEE;
+}
+
+.p3-col-1-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Column 2 - Cocoa Health & Why Jaggery */
+.p3-col-2 {
+  background-color: var(--b-brown-dark);
+  color: #FDFBF7;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--b-tan-border);
+  height: 100%;
+}
+
+.p3-col-2-top-image {
+  height: 165px; /* Increased to solve blank space */
+  width: 100%;
+  overflow: hidden;
+}
+
+.p3-col-2-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p3-col-2-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p3-mid-section {
+  margin-bottom: 12px;
+}
+
+.p3-mid-section h3 {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #FFF;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.p3-mid-section h3::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.p3-list-item {
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.p3-list-item h4 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--b-gold);
+}
+
+.p3-list-item p {
+  font-size: 0.72rem;
+  color: #E3D6C2;
+}
+
+.p3-uses-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.p3-pill {
+  font-size: 0.65rem;
+  background-color: var(--b-brown-darker);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.p3-quote-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: #E3D6C2;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Column 3 - Specs & Contact */
+.p3-col-3 {
+  background-color: var(--b-paper-bg);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.p3-col-3-intro {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #7A695D;
+  margin-bottom: 12px;
+}
+
+.p3-col-3-image {
+  height: 145px; /* Increased to solve blank space */
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--b-tan-border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 12px;
+  background-color: #EEE;
+}
+
+.p3-col-3-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p3-white-panel {
+  background-color: var(--b-white);
+  border: 1px solid var(--b-tan-border);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.p3-white-panel h4 {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--b-brown-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-bottom: 1.5px solid var(--b-tan-border);
+  padding-bottom: 4px;
+}
+
+.p3-bullets {
+  list-style: none;
+  font-size: 0.72rem;
+  color: #7A695D;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p3-bullets li {
+  display: flex;
+  gap: 6px;
+  line-height: 1.25;
+}
+
+.p3-bullets li span {
+  color: var(--b-gold);
+  font-weight: bold;
+}
+
+/* Contact block inside Page 3 column 3 */
+.p3-contact-block {
+  background-color: var(--b-white);
+  border: 1px solid var(--b-tan-border);
+  border-radius: 6px;
+  padding: 12px 15px;
+}
+
+.p3-contact-block h4 {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--b-brown-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  border-bottom: 1.5px solid var(--b-tan-border);
+  padding-bottom: 4px;
+}
+
+.p3-contact-name {
+  font-family: var(--font-sans);
+  font-weight: bold;
+  font-size: 0.88rem;
+  color: var(--b-brown-dark);
+}
+
+.p3-contact-title {
+  font-size: 0.68rem;
+  color: var(--b-gold);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.p3-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: #7A695D;
+}
+
+.p3-contact-links a {
+  color: #7A695D;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.p3-contact-links a:hover {
+  color: var(--b-gold);
+}
+
+.p3-contact-links span {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1.2;
+}
+
+.p3-contact-links svg {
+  color: var(--b-gold);
+  flex-shrink: 0;
+}
+
+/* ── PREVIEW FOOTER & CONTROLS ── */
+.brochure-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto 40px auto;
+  align-items: center;
+}
+
+.btn-ctrl {
+  background-color: var(--b-white);
+  border: 1px solid var(--b-tan-border);
+  color: var(--b-brown-dark);
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  font-size: 0.8rem;
+}
+
+.btn-ctrl:hover:not(:disabled) {
+  background-color: var(--b-brown-dark);
+  color: #FFF;
+}
+
+.btn-ctrl:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.page-counter-indicator {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--b-brown-dark);
+  font-weight: bold;
+}
+
+/* ── PRINT CONTEXT STYLESHEET (@media print) ── */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  /* Hide all digital layout control buttons, header, and body wrappers */
+  .no-print,
+  .brochure-bar,
+  .brochure-tabs,
+  .brochure-controls,
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+  
+  /* Reset document defaults */
+  body, html {
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  /* Reset outer wrappers */
+  .brochure-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .brochure-viewport {
+    overflow: visible !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    background-color: transparent !important;
+  }
+  
+  .brochure-pages-wrapper {
+    display: block !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+  
+  /* Re-format each brochure section for printing */
+  .brochure-page {
+    width: 297mm !important;     /* Force standard Landscape A4 width */
+    height: 210mm !important;    /* Force standard Landscape A4 height */
+    max-width: 297mm !important;
+    max-height: 210mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: var(--b-paper-bg) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  /* Force exact background colors on print */
+  .p1-cover-sidebar,
+  .p2-sidebar,
+  .p3-col-2 {
+    background-color: var(--b-brown-dark) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .cover-sidebar-button {
+    background-color: var(--b-brown-darker) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .p2-main {
+    background-color: var(--b-white) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .p2-prod-box,
+  .p3-p-box {
+    background-color: var(--b-paper-bg) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .p2-cert-item,
+  .p3-white-panel,
+  .p3-contact-block {
+    background-color: var(--b-white) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .p3-pill {
+    background-color: var(--b-brown-darker) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* ── RESPONSIVE MOBILE OVERRIDES ── */
+@media (max-width: 1024px) {
+  body {
+    background-color: var(--b-paper-bg);
+  }
+  
+  .brochure-container {
+    margin: 10px auto;
+    padding: 0 10px 40px 10px;
+  }
+  
+  .brochure-viewport {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .brochure-page {
+    aspect-ratio: auto;
+    height: auto;
+    min-height: auto;
+    width: 33.333%;
+  }
+
+  .p1-cover-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .p1-cover-sidebar {
+    padding: 30px;
+  }
+
+  .p1-image-center {
+    height: 250px;
+  }
+
+  .p2-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .p2-sidebar {
+    padding: 30px;
+  }
+
+  .p2-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .p2-products-row {
+    grid-template-columns: 1fr;
+  }
+
+  .p2-certs-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .p3-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .p3-col-1, .p3-col-2 {
+    border-right: none;
+    border-bottom: 2px solid var(--b-tan-border);
+  }
+  
+  .p3-col-2-body {
+    padding: 30px;
+  }
+  
+  .p3-col-1-image, .p3-col-2-top-image, .p3-col-3-image {
+    height: 200px;
+  }
+}
