@@ -3,15 +3,15 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette (Earthy, Organic Jaggery Theme) */
-  --b-brown-dark: #5A3E2B;      /* Rich chocolate cocoa background */
-  --b-brown-darker: #4E3524;    /* Deep chocolate cocoa for sidebar buttons */
-  --b-brown-text: #5A3E2B;      /* Standard text brown */
+  /* Color Palette (Website Theme: Green & Gold) */
+  --b-brown-dark: #1E4D2B;      /* Deep green background */
+  --b-brown-darker: #14381F;    /* Darker green for sidebar buttons */
+  --b-brown-text: #1A2A1E;      /* Standard text dark green/black */
   --b-gold: #B8955A;            /* Warm muted gold for headers and accents */
-  --b-gold-light: #F2EADA;      /* Soft warm tan for block quotes and highlights */
-  --b-cream-bg: #EADFC9;        /* Warm background tan shown on the printed sheet background */
-  --b-paper-bg: #F5EFEB;        /* Soft warm paper color for pages/panels */
-  --b-tan-border: #D1C5B0;      /* Border color matching original tan cards */
+  --b-gold-light: #F0E4C8;      /* Soft warm tan for block quotes and highlights */
+  --b-cream-bg: #E8E0D0;        /* Warm background tan */
+  --b-paper-bg: #FAF8F2;        /* Soft cream color for pages/panels */
+  --b-tan-border: #D4E4D6;      /* Border color matching website borders */
   --b-white: #FFFFFF;           /* Pure white card backgrounds */
   
   /* Fonts */
